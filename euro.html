@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function przelicz()
+        {
+            var a =parseFloat(document.getElementById("a").value);
+            var b =parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML= b/a;
+        }
+    </script>
+</head>
+<body>
+    <h1>kalkulator euro</h1>
+    <p>podaj kurs euro=</p>
+    <input type="text" id="a">
+    <p>podaj liczbę złotówek=</p>
+    <input type="text" id="b">
+    <div id="wynik">TU UKAŻE SIĘ WYNIK</div>
+    <button onclick="przelicz()">=</button>
+</body>
+</html>
